@@ -1,0 +1,22 @@
+
+<table class="table table-striped">
+ 
+  {{#each products}}
+  <tbody>
+    <div class="item row border p-2 mb-2">
+            <div class="col-sm-4 text-center mt-2">
+                <input  type="text" value="{{_doc.ten}}"style="border: none;text-align: center; background: none;"
+                    readonly>
+            </div>
+            <div class="col-sm-4 text-center mt-2">
+                <input  type="text" value="{{_doc.gia}}"
+                    style="border: none;text-align: center; background: none;" readonly>
+            </div>
+            <div class="col-sm-4 text-center mt-2">
+                <input  type="text" value="{{_doc.soluong}}"
+                    style="border: none;text-align: center; background: none;" readonly>
+            </div>
+        </div>
+  </tbody>
+  {{/each}}
+</table>
